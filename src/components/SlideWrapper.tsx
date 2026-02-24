@@ -13,7 +13,7 @@ export const SlideWrapper = ({ children, className = "" }: SlideWrapperProps) =>
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 1.02 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={`w-full h-full flex flex-col overflow-hidden bg-white dark:bg-slate-900 ${className}`}
+      className={`w-full h-full flex flex-col overflow-y-auto overflow-x-hidden bg-white dark:bg-slate-900 ${className}`}
     >
       {children}
     </motion.div>
